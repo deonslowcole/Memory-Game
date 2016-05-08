@@ -6,16 +6,29 @@
 //  Copyright © 2016 Deon Cole. All rights reserved.
 //
 
+
+//When using a custom CoreData Stack import CoreData
 import UIKit
+import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    //Declare a lazy variable that will be waiting to be called for the custom CoreData Stack
+    lazy var CDStack = Memory_CoreDataStack()
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //Set the view controller managed context to the context of the custom stack
+//        let viewController = self.window!.rootViewController! as! ViewController
+        
+//        viewController.managedObjContext = CDStack.context
+        
+        managedObjContext = CDStack.context
+        
         return true
     }
 
@@ -39,6 +52,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+        
+        //Save the context just in case the app is closed
+        CDStack.saveContext()
     }
 
 

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E355313E1CD1B734006984BD /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355313D1CD1B734006984BD /* SecondViewController.swift */; };
+		E35531401CD1CB48006984BD /* Memory_CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355313F1CD1CB48006984BD /* Memory_CoreDataStack.swift */; };
+		E35531431CD1CCBB006984BD /* MemCDStackDM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E35531411CD1CCBB006984BD /* MemCDStackDM.xcdatamodeld */; };
 		E39AD8AE1CB9F9E3004FE783 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39AD8AD1CB9F9E3004FE783 /* AppDelegate.swift */; };
 		E39AD8B01CB9F9E3004FE783 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39AD8AF1CB9F9E3004FE783 /* ViewController.swift */; };
 		E39AD8B31CB9F9E3004FE783 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E39AD8B11CB9F9E3004FE783 /* Main.storyboard */; };
@@ -26,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E355313D1CD1B734006984BD /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		E355313F1CD1CB48006984BD /* Memory_CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Memory_CoreDataStack.swift; sourceTree = "<group>"; };
+		E35531421CD1CCBB006984BD /* MemCDStackDM.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MemCDStackDM.xcdatamodel; sourceTree = "<group>"; };
 		E39AD8AA1CB9F9E3004FE783 /* ColeDeonslow_CE4Adaptive LayoutProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ColeDeonslow_CE4Adaptive LayoutProject.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E39AD8AD1CB9F9E3004FE783 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E39AD8AF1CB9F9E3004FE783 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,9 +86,12 @@
 				E39AD8AD1CB9F9E3004FE783 /* AppDelegate.swift */,
 				E39AD8AF1CB9F9E3004FE783 /* ViewController.swift */,
 				E39AD8B11CB9F9E3004FE783 /* Main.storyboard */,
+				E355313D1CD1B734006984BD /* SecondViewController.swift */,
 				E39AD8B41CB9F9E3004FE783 /* Assets.xcassets */,
 				E39AD8B61CB9F9E3004FE783 /* LaunchScreen.storyboard */,
 				E39AD8B91CB9F9E3004FE783 /* Info.plist */,
+				E355313F1CD1CB48006984BD /* Memory_CoreDataStack.swift */,
+				E35531411CD1CCBB006984BD /* MemCDStackDM.xcdatamodeld */,
 			);
 			path = "ColeDeonslow_CE4Adaptive LayoutProject";
 			sourceTree = "<group>";
@@ -197,7 +206,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E35531431CD1CCBB006984BD /* MemCDStackDM.xcdatamodeld in Sources */,
+				E355313E1CD1B734006984BD /* SecondViewController.swift in Sources */,
 				E39AD8B01CB9F9E3004FE783 /* ViewController.swift in Sources */,
+				E35531401CD1CB48006984BD /* Memory_CoreDataStack.swift in Sources */,
 				E39AD8AE1CB9F9E3004FE783 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,6 +402,7 @@
 				E39AD8C91CB9F9E3004FE783 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E39AD8CA1CB9F9E3004FE783 /* Build configuration list for PBXNativeTarget "ColeDeonslow_CE4Adaptive LayoutProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -398,8 +411,22 @@
 				E39AD8CC1CB9F9E3004FE783 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E35531411CD1CCBB006984BD /* MemCDStackDM.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E35531421CD1CCBB006984BD /* MemCDStackDM.xcdatamodel */,
+			);
+			currentVersion = E35531421CD1CCBB006984BD /* MemCDStackDM.xcdatamodel */;
+			path = MemCDStackDM.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E39AD8A21CB9F9E3004FE783 /* Project object */;
 }
